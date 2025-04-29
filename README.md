@@ -36,7 +36,6 @@ Pattern similarity analysis using Spearman correlation showed that chemically di
 - **Spearman Correlation Matrix:** The Spearman correlation matrix revealed block-like patterns where replicates of the same chemical clustered tightly, indicating consistent internal sensor behavior, while inter-chemical blocks showed weaker correlations.
 - **Mann-Whitney Test Matrix:** Visual matrices summarizing pairwise Mann-Whitney U-test results emphasized distinct separability across chemical groups, confirming findings from the KS test.
 - **Variance Decomposition Plots:** Graphical representations of variance decomposition demonstrated that inter-chemical variability significantly exceeded intra-chemical variability across many sensors.
-- **t-SNE Visualization:** Although not fully detailed, dimensionality reduction plots (if referenced) visually supported the numerical results by showing distinct clustering of chemical classes.
 
 ## Discussion
 The results from all nonparametric methods consistently demonstrate that the colorimetric sensor array can reliably distinguish among different TICs based on short exposure durations. Despite inherent variability in sensor responses, robust statistical separation was achieved without relying on parametric assumptions. This supports the array's potential for rapid chemical identification tasks, especially in field and emergency settings.
