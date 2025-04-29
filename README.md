@@ -1,5 +1,10 @@
 # Chemical Discrimination Using a Colorimetric Sensor Array: A Nonparametric Statistical Analysis
 
+## Submission Note for Instructor / Grader
+
+This `README.md` serves as the **final report** for STAT 4250 Final Project.  
+It includes the project overview, research question, modeling approach, and analysis summary.  
+
 ## Abstract
 This report presents the analysis of a colorimetric sensor array's ability to distinguish between toxic industrial chemicals (TICs) after two minutes of exposure. Utilizing nonparametric methods and analyzing results from provided experimental datasets, we evaluated chemical separability through Kruskal-Wallis H-tests, Mann-Whitney U-tests, Kolmogorov-Smirnov (KS) tests, and Spearman correlations. Findings demonstrate statistically significant inter-chemical differences, supporting the feasibility of rapid chemical identification.
 
