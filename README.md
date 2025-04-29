@@ -28,10 +28,7 @@ The study draws inspiration from the mammalian olfactory system, using a colorim
 - `kenfig1b.pptx` - Background material on olfactory systems and artificial chemical sensing.
 
 ## Next Steps / To-Do
-- Further refine statistical analysis (e.g., effect size measurements).
-- Visualize intra- vs inter-chemical variance.
-- Explore multivariate analysis methods (e.g., PCA, clustering).
-- Formalize conclusions and practical implications for sensor design.
+- write report
 
 ## References
 - Wang, Luthey-Schulten, Suslick, PNAS 2003, *"Colorimetric sensor arrays"*.
