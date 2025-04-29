@@ -22,11 +22,9 @@ The study draws inspiration from the mammalian olfactory system, using a colorim
 
 ## Files
 - `DB_220_IDLH_2mins.txt` - Raw sensor response data.
-- `EDA.py` - Python script for initial exploratory analysis.
-- `kruskal_result.csv` - Results of Kruskal-Wallis tests.
-- `mannwhitney_results.csv` - Results of Mann-Whitney U-tests.
-- `ks_test_results.csv` - Results of Kolmogorov-Smirnov tests.
-- `spearman_results.csv` - Results of Spearman correlation analysis.
+- `EDA` - Folder with python script for initial EDA and related results
+- `DiscriminationAnalysis.ipynb` Jupyter Notebook with complete discrimination analysis.
+- `results` Plots and graphs from the notebook
 - `kenfig1b.pptx` - Background material on olfactory systems and artificial chemical sensing.
 
 ## Next Steps / To-Do
