@@ -13,11 +13,11 @@ The study draws inspiration from the mammalian olfactory system, using a colorim
 
 ## Methodology
 - **Exploratory Data Analysis (EDA)** to understand the structure and distribution of sensor responses.
-- **Non-parametric statistical tests** applied:
-  - Kruskal-Wallis H-test (multiple group comparison)
-  - Mann-Whitney U-test (pairwise group comparison)
-  - Kolmogorov-Smirnov test (distribution comparison)
-  - Spearman correlation analysis (response pattern relationships)
+  - **Non-parametric statistical tests** applied:
+    - Kruskal-Wallis H-test (multiple group comparison)
+    - Mann-Whitney U-test (pairwise group comparison)
+    - Kolmogorov-Smirnov test (distribution comparison)
+    - Spearman correlation analysis (response pattern relationships)
 - Focus on measuring within-group (intra-chemical) vs between-group (inter-chemical) variability.
 
 ## Files
