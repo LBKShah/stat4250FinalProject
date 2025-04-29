@@ -1,38 +1,58 @@
-**Statistical Analysis of Colorimetric Sensor Array Responses for Rapid Chemical Detection**
+# Chemical Discrimination Testing with Colorimetric Sensor Arrays
 
-## Project Description
-This project investigates the statistical behavior of a colorimetric sensor array exposed to various toxic industrial chemicals (TICs) for short periods (2 minutes). Specifically, it examines whether the variance between different chemical groups is statistically greater than the variance within replicates of the same chemical, thus assessing the reliability and discriminatory power of the sensor array.
+## Overview
 
-The study draws inspiration from the mammalian olfactory system, using a colorimetric approach to simulate chemical "fingerprints" and explores the potential of such an array for rapid, portable chemical detection.
+This project evaluates whether a colorimetric sensor array can reliably distinguish between different toxic industrial chemicals (TICs) based on sensor response data collected after 2 minutes of exposure. The work is inspired by the structure of the mammalian olfactory system and aims to determine whether statistically distinct patterns emerge between chemical groups despite short exposure durations.
 
-## Research Question
-**How consistent are sensor array responses across replicates for each chemical, and are inter-chemical differences statistically greater than intra-chemical variance?**
+## Research Objectives
 
-## Data
-- **DB_220_IDLH_2mins.txt**: Sensor array response data. Includes multiple replicate measurements for different chemicals after 2 minutes of exposure.
+- Primary Research Question:  
+  Are inter-chemical differences significantly greater than intra-chemical variability (within replicates)?
 
-## Methodology
-- **Exploratory Data Analysis (EDA)** to understand the structure and distribution of sensor responses.
-  - **Non-parametric statistical tests** applied:
-    - Kruskal-Wallis H-test (multiple group comparison)
-    - Mann-Whitney U-test (pairwise group comparison)
-    - Kolmogorov-Smirnov test (distribution comparison)
-    - Spearman correlation analysis (response pattern relationships)
-- Focus on measuring within-group (intra-chemical) vs between-group (inter-chemical) variability.
+- Goal:  
+  Use nonparametric statistical methods to evaluate chemical separability in a robust, assumption-free way.
 
-## Files
-- `DB_220_IDLH_2mins.txt` - Raw sensor response data.
-- `EDA` - Folder with python script for initial EDA and related results
-- `DiscriminationAnalysis.ipynb` Jupyter Notebook with complete discrimination analysis.
-- `results` Plots and graphs from the notebook
-- `kenfig1b.pptx` - Background material on olfactory systems and artificial chemical sensing.
+## Nonparametric Modeling Approach
 
-## Next Steps / To-Do
-- write report
+To answer the research question, the following nonparametric methods were used:
 
-## References
-- Wang, Luthey-Schulten, Suslick, PNAS 2003, *"Colorimetric sensor arrays"*.
+- Variance decomposition: Compare inter- versus intra-chemical variance
+- Kruskal-Wallis H-test: Identify sensors with statistically significant group-level differences
+- Mann-Whitney U-tests: Perform pairwise chemical comparisons
+- Kolmogorov-Smirnov tests: Evaluate distributional shape differences
+- Spearman correlation: Assess pattern similarity across chemical profiles
+- t-SNE: Visualize chemical separation in a fully nonparametric way
 
----
-*This README is a living document and will be updated as the project evolves.*
+These methods avoid assumptions of normality, linearity, and homogeneity of variance, making them suitable for sensor data with complex or unknown distributional properties.
 
+## Comparison to Parametric Methods
+
+Advantages of nonparametric methods:
+
+- Do not require assumptions about data distribution
+- More robust to outliers and small sample sizes
+- Well-suited to complex, nonlinear chemical response profiles
+
+Disadvantages compared to parametric models:
+
+- Lower statistical power when parametric assumptions are valid
+- Limited interpretability and no coefficient estimates
+- Nonlinear visualizations (e.g., t-SNE) are harder to interpret quantitatively
+
+Overall, nonparametric methods are a better fit for this application due to the unpredictable nature of chemical sensor output.
+
+## File Descriptions
+
+| File | Description |
+|------|-------------|
+| `DB_220_IDLH_2mins.txt` | Raw sensor response data for 2-minute chemical exposures. Each column is a sample. |
+| `EDA` | Folder with python script for initial Exploratory Data Analysis and related results
+| `DiscriminationAnalysis.pdf` | Final project report combining analysis, visualizations, and discussion. |
+| `kenfig1b.pptx` | Background presentation on olfactory systems and sensor design. |
+| `results` | Plots and graphs from the notebook |
+| `Table of Contents.html` | HTML page for navigation and project overview. |
+| `README.md` | This file. High-level summary of project purpose, methods, and contents. |
+
+## Summary
+
+This project demonstrates that nonparametric statistical methods can effectively identify chemically meaningful separation in a colorimetric sensor array. Despite short exposure times, sensor profiles show statistically significant distinctions between chemical groups. These results support the feasibility of using such arrays for rapid, robust chemical detection in field settings.
